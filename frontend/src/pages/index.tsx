@@ -26,9 +26,9 @@ export function HomeInner() {
   } | null>(null);
   const { shouldConnect, wsUrl, token, connect, disconnect } = useConnection();
 
-  const title = "LiveKit Voice Agent with Cartesia";
+  const title = "Aitek PH Voice Assistant";
   const description =
-    "This is a demo of a LiveKit Voice Pipeline Agent using Cartesia and GPT-4o-mini.";
+    "Welcome to the Aitek PH Voice Assistant powered by advanced AI technologies. Experience seamless support with natural voice interactions.";
 
   const handleConnect = useCallback(
     async (c: boolean) => {
@@ -46,15 +46,15 @@ export function HomeInner() {
         <meta name="og:description" content={description} />
         <meta
           property="og:image"
-          content="https://cartesia-assistant.vercel.app/og.png"
+          content="https://aitekph.com/assets/aitekph-assistant-og.png"
         />
-        <meta name="twitter:site" content="@LiveKit"></meta>
+        <meta name="twitter:site" content="@AitekPH"></meta>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta
           property="twitter:image"
-          content="https://cartesia-assistant.vercel.app/og.png"
+          content="https://aitekph.com/assets/aitekph-assistant-og.png"
         />
         <meta property="twitter:image:width" content="1600" />
         <meta property="twitter:image:height" content="836" />
@@ -100,8 +100,8 @@ export function HomeInner() {
           }}
         >
           <Assistant
-            title={title}
-            logo={<img src="/cartesia-logo.svg" alt="Cartesia logo" />}
+            title="Aitek PH Voice Assistant"
+            logo={<img src="/aitekph-logo.svg" alt="Aitek PH logo" />}
             onConnect={handleConnect}
           />
           <RoomAudioRenderer />
